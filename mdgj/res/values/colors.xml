@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <drawable name="main_bg">#e8e8e8</drawable>
+    <drawable name="main_bg2">#f8f9f9</drawable>
+    <color name="font_default">#888888</color>
+    <color name="font_blue">#009fbb</color>
+    <color name="white">#ffffff</color>
+    <color name="dashed_color">#aaaaaa</color>
+    <color name="pop_bg_color">#343535</color>
+</resources>

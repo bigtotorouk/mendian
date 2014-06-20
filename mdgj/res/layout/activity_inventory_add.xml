@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/title_bg" >
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="新增仓库"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="保存"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="4dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_bg"
+            android:orientation="vertical" >
+            <LinearLayout android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:paddingTop="2dp"
+	            android:paddingBottom="2dp"
+	            android:gravity="center_vertical"
+	            android:orientation="horizontal">
+                <TextView android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="@color/font_default"
+                    android:text="仓库名称"/>
+                <EditText android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+            <View android:layout_width="match_parent"
+                android:layout_height="1dp" android:background="@color/dashed_color"/>
+            <LinearLayout android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:paddingTop="2dp"
+	            android:paddingBottom="2dp"
+	            android:gravity="center_vertical"
+	            android:orientation="horizontal">
+                <TextView android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="@color/font_default"
+                    android:text="仓库编号"/>
+                <EditText android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+            <View android:layout_width="match_parent"
+                android:layout_height="1dp" android:background="@color/dashed_color"/>
+            <LinearLayout android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:paddingTop="2dp"
+	            android:paddingBottom="2dp"
+	            android:gravity="center_vertical"
+	            android:orientation="horizontal">
+                <TextView android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="@color/font_default"
+                    android:text="仓库地址"/>
+                <EditText android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+            <View android:layout_width="match_parent"
+                android:layout_height="1dp" android:background="@color/dashed_color"/>
+            <LinearLayout android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:paddingTop="2dp"
+	            android:paddingBottom="2dp"
+	            android:gravity="center_vertical"
+	            android:orientation="horizontal">
+                <TextView android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="@color/font_default"
+                    android:text="办公电话"/>
+                <EditText android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+            <View android:layout_width="match_parent"
+                android:layout_height="1dp" android:background="@color/dashed_color"/>
+            <LinearLayout android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:paddingTop="2dp"
+	            android:paddingBottom="2dp"
+	            android:gravity="center_vertical"
+	            android:orientation="horizontal">
+                <TextView android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="@color/font_default"
+                    android:text="联系人"/>
+                <EditText android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+            <View android:layout_width="match_parent"
+                android:layout_height="1dp" android:background="@color/dashed_color"/>
+            <LinearLayout android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:paddingTop="2dp"
+	            android:paddingBottom="2dp"
+	            android:gravity="center_vertical"
+	            android:orientation="horizontal">
+                <TextView android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="@color/font_default"
+                    android:text="移动电话"/>
+                <EditText android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+            <View android:layout_width="match_parent"
+                android:layout_height="1dp" android:background="@color/dashed_color"/>
+            <LinearLayout android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:paddingTop="2dp"
+	            android:paddingBottom="2dp"
+	            android:gravity="center_vertical"
+	            android:orientation="horizontal">
+                <TextView android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="@color/font_default"
+                    android:text="备注"/>
+                <EditText android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+            <View android:layout_width="match_parent"
+                android:layout_height="1dp" android:background="@color/dashed_color"/>
+            <LinearLayout android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:paddingTop="2dp"
+	            android:paddingBottom="2dp"
+	            android:gravity="center_vertical"
+	            android:orientation="horizontal">
+                <TextView android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="@color/font_default"
+                    android:text="仓库状态"/>
+                <EditText android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/dashed_color"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+		
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/font_blue"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="保存"
+            android:textColor="@color/font_blue"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>
