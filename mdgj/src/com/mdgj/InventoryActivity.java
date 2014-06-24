@@ -11,7 +11,9 @@ import com.mdgj.fragment.menu.InventoryManageFrag;
 import com.mdgj.fragment.menu.MoreManageFrag;
 import com.mdgj.fragment.menu.PurchaseManageFrag;
 import com.mdgj.fragment.menu.SaleManageFrag;
+import com.mdgj.util.ContextUtil;
 
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
@@ -47,6 +49,7 @@ public class InventoryActivity extends FragmentActivity {
 					.show();
 			return;
 		}
+		ContextUtil.hideKeyBoard(findViewById(R.id.content), this);
 		Fragment fragment = getSupportFragmentManager().findFragmentByTag(
 				TAGS[position]);
 		FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
@@ -63,5 +66,11 @@ public class InventoryActivity extends FragmentActivity {
 		ft.commit();
 		getSupportFragmentManager().executePendingTransactions();
 		
+	}
+	
+	@Override
+	public void onConfigurationChanged(Configuration newConfig) {
+		// TODO Auto-generated method stub
+		super.onConfigurationChanged(newConfig);
 	}
 }

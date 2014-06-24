@@ -3,6 +3,7 @@ package com.mdgj.fragment.inventory;
 import com.mdgj.InventoryActivity;
 import com.mdgj.InventoryAddActivyt;
 import com.mdgj.R;
+import com.mdgj.util.ContextUtil;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -18,7 +19,6 @@ import android.view.ViewGroup;
  */
 public class InventoryInfoFrag extends Fragment implements OnClickListener {
 	private InventoryActivity parentActivity;
-	
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		parentActivity = (InventoryActivity)getActivity();
@@ -30,6 +30,8 @@ public class InventoryInfoFrag extends Fragment implements OnClickListener {
 			Bundle savedInstanceState) {
 		View view = inflater.inflate(R.layout.frag_inventory_info, container, false);
 		view.findViewById(R.id.add).setOnClickListener(this);
+		
+		ContextUtil.hideKeyBoard(view.findViewById(R.id.content), getActivity());
 		return view;
 	}
 

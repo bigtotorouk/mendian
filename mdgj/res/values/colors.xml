@@ -6,6 +6,7 @@
     <color name="font_default">#888888</color>
     <color name="font_blue">#009fbb</color>
     <color name="white">#ffffff</color>
+    <color name="transparent">#00000000</color>
     <color name="dashed_color">#aaaaaa</color>
     <color name="pop_bg_color">#343535</color>
 </resources>

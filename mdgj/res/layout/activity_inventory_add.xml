@@ -16,6 +16,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
             android:src="@drawable/back" />
 
         <TextView
@@ -32,9 +33,11 @@
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
+            android:layout_marginRight="3dp"
             android:text="保存"
             android:textColor="@color/white"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            android:background="@drawable/btn_bg" />
     </RelativeLayout>
 
     <LinearLayout
@@ -179,9 +182,11 @@
                     android:textSize="15sp"
                     android:textColor="@color/font_default"
                     android:text="仓库状态"/>
-                <EditText android:layout_width="wrap_content"
+                <ToggleButton android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"/>
+                    android:textOn=""
+                    android:textOff=""
+                    />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
@@ -193,6 +198,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:background="@drawable/main_bg2"
         android:paddingBottom="10dp"
         android:paddingTop="10dp" >
 		

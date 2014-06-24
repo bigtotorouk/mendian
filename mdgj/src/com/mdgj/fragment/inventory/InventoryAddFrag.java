@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import com.mdgj.R;
+import com.mdgj.util.ContextUtil;
 /**
  * Inventory add , edit
  * @author bing
@@ -17,6 +18,8 @@ public class InventoryAddFrag extends Fragment{
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
 		View view = inflater.inflate(R.layout.activity_inventory_add, container, false);
+		
+		ContextUtil.hideKeyBoard(view, getActivity());
 		return view;
 	}
 }
