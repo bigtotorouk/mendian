@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
     android:orientation="vertical" >
     <RelativeLayout android:layout_width="match_parent"
 	    android:layout_height="50dp"
@@ -19,18 +20,21 @@
 	        android:textSize="20sp"
 	        android:textColor="#fff"/>
 	    
-	    <ImageButton android:id="@+id/search"
+	    <ImageView android:id="@+id/search"
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
 	        android:layout_centerVertical="true"
 	        android:layout_alignParentRight="true"
-	        android:src="@drawable/search"/>
+	        android:layout_marginRight="6dp"
+	        android:src="@drawable/btn_search"/>
 	</RelativeLayout>
 	
 	<include  layout="@layout/simple_search_layout"/>
-    
-	<ListView android:layout_width="match_parent"
+
+	<ListView
+	    android:layout_width="match_parent"
 	    android:layout_height="wrap_content"
-	    android:layout_weight="1"/>
+	    android:layout_weight="1" >
+	</ListView>
 
 </LinearLayout>
