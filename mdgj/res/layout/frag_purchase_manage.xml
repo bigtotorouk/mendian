@@ -44,7 +44,9 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="今日采购" />
+                    android:text="今日采购"
+                    android:textColor="@color/font_default"
+                    android:textSize="18sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -80,18 +82,20 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="0"
-                android:textColor="@android:color/holo_blue_light" />
+                android:textColor="@color/font_blue"
+                android:textSize="18sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="元"
-                android:textColor="@android:color/holo_blue_light" />
+                android:textColor="@color/font_blue"
+                android:textSize="18sp" />
 
-            <TextView
+            <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text=">" />
+                android:src="@drawable/open_arrow" />
         </LinearLayout>
     </LinearLayout>
 
@@ -129,7 +133,9 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="本周采购" />
+                    android:text="本周采购"
+                    android:textColor="@color/font_default"
+                    android:textSize="18sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -165,18 +171,20 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="0"
-                android:textColor="@android:color/holo_green_dark" />
+                android:textColor="@color/font_green"
+                android:textSize="18sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="元"
-                android:textColor="@android:color/holo_green_dark" />
+                android:textColor="@color/font_green"
+                android:textSize="18sp" />
 
-            <TextView
+            <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text=">" />
+                android:src="@drawable/open_arrow" />
         </LinearLayout>
     </LinearLayout>
 
@@ -214,7 +222,9 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="本月采购" />
+                    android:text="本月采购"
+                    android:textColor="@color/font_default"
+                    android:textSize="18sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -250,18 +260,20 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="3,150"
-                android:textColor="@android:color/holo_blue_light" />
+                android:textColor="@color/font_blue"
+                android:textSize="18sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="元"
-                android:textColor="@android:color/holo_blue_light" />
+                android:textColor="@color/font_blue"
+                android:textSize="18sp" />
 
-            <TextView
+            <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text=">" />
+                android:src="@drawable/open_arrow" />
         </LinearLayout>
     </LinearLayout>
 
@@ -285,7 +297,7 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@android:drawable/ic_menu_add" />
+                android:src="@drawable/purchase_order_add" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -304,7 +316,7 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@android:drawable/ic_menu_add" />
+                android:src="@drawable/purchase_template_add" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -323,7 +335,7 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@android:drawable/ic_menu_my_calendar" />
+                android:src="@drawable/purchase_order_history" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -347,7 +359,7 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@android:drawable/ic_menu_delete" />
+                android:src="@drawable/purchase_return_add" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -366,7 +378,7 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@android:drawable/ic_menu_my_calendar" />
+                android:src="@drawable/purchase_return_history" />
 
             <TextView
                 android:layout_width="wrap_content"

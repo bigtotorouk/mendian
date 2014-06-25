@@ -15,7 +15,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
-            android:layout_centerVertical="true" />
+            android:layout_centerVertical="true"
+            android:background="@drawable/back" />
 
         <TextView
             android:id="@+id/title"
@@ -115,7 +116,8 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="16:23" />
+                android:text="16:23"
+                android:textColor="@color/font_black" />
         </LinearLayout>
 
         <LinearLayout
@@ -133,12 +135,14 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="单据号" />
+                    android:text="单据号"
+                    android:textColor="@color/font_black" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="C201412231923003" />
+                    android:text="C201412231923003"
+                    android:textColor="@color/font_black" />
             </LinearLayout>
 
             <TextView
@@ -156,7 +160,8 @@
 
             <Button
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:background="@drawable/open_arrow" />
         </LinearLayout>
     </LinearLayout>
 
@@ -327,7 +332,8 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="复制一笔" />
+                android:text="复制一笔"
+                android:textColor="@color/font_blue" />
         </LinearLayout>
 
         <LinearLayout
@@ -348,12 +354,14 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="1,400,40" />
+                android:text="1,400,40"
+                android:textColor="@color/font_orange" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="元" />
+                android:text="元"
+                android:textColor="@color/font_orange" />
         </LinearLayout>
     </LinearLayout>
 
@@ -376,7 +384,8 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="15:23" />
+                android:text="15:23"
+                android:textColor="@color/font_black" />
         </LinearLayout>
 
         <LinearLayout
@@ -394,12 +403,14 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="单据号" />
+                    android:text="单据号"
+                    android:textColor="@color/font_black" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="C201412231923003" />
+                    android:text="C201412231923003"
+                    android:textColor="@color/font_black" />
             </LinearLayout>
 
             <TextView
@@ -417,7 +428,8 @@
 
             <Button
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:background="@drawable/open_arrow" />
         </LinearLayout>
     </LinearLayout>
 
@@ -588,7 +600,8 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="复制一笔" />
+                android:text="复制一笔"
+                android:textColor="@color/font_blue" />
         </LinearLayout>
 
         <LinearLayout
@@ -609,12 +622,14 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="1,400,40" />
+                android:text="1,400,40"
+                android:textColor="@color/font_orange" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="元" />
+                android:text="元"
+                android:textColor="@color/font_orange" />
         </LinearLayout>
     </LinearLayout>
 
