@@ -15,31 +15,85 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
-            android:layout_centerVertical="true" 
-            android:background="@drawable/back"/>
+            android:layout_centerVertical="true"
+            android:background="@drawable/back" />
 
         <TextView
             android:id="@+id/title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:text="选择模板"
+            android:text="选择商品"
             android:textColor="#fff"
             android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/btn_bg"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/header_add" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="新增商品" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/txt_query"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="筛选:"
+            android:textColor="@color/font_black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/txt_query"
+            android:text="类别:"
+            android:textColor="@color/font_black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="常规商品"
+            android:textColor="@color/font_blue" />
     </RelativeLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
+        android:layout_height="wrap_content"
+        android:gravity="left|center" >
 
         <SearchView
-            android:id="@+id/search_histroy"
-            android:layout_width="match_parent"
+            android:id="@+id/search_goods"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:iconifiedByDefault="false"
             android:inputType="textFilter"
-            android:queryHint="模板名称" >
+            android:queryHint="名称、条码、拼音首字母" >
         </SearchView>
+
+        <Button
+            android:id="@+id/btn_scan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_bg" />
     </LinearLayout>
 
     <View
@@ -54,79 +108,39 @@
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_weight="1.5"
             android:gravity="center"
             android:orientation="vertical" >
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="名称" />
+                android:text="电子称"
+                android:textColor="@color/font_black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="商品规格：RG01" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginRight="8dp"
-            android:layout_weight="1"
-            android:gravity="center"
+            android:layout_weight="3.5"
+            android:gravity="left|center"
             android:orientation="vertical" >
 
-            <TextView
+            <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="使用次数" />
-        </LinearLayout>
+                android:layout_height="wrap_content" >
 
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_marginRight="8dp"
-            android:layout_weight="2"
-            android:gravity="left" >
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="创建时间" />
-        </LinearLayout>
-    </LinearLayout>
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@android:color/darker_gray" />
-
-    <LinearLayout
-        android:id="@+id/ll_template1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical" >
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="模板1" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="8dp"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical" >
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="3" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="参考采购价：23.00" />
+            </LinearLayout>
         </LinearLayout>
 
         <LinearLayout
@@ -134,25 +148,12 @@
             android:layout_height="match_parent"
             android:layout_marginRight="8dp"
             android:layout_weight="1"
-            android:gravity="center" >
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="2014-6-19" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_marginRight="8dp"
-            android:layout_weight="1"
-            android:gravity="center" >
+            android:gravity="right|center" >
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@android:drawable/ic_menu_delete" />
+                android:background="@drawable/open_arrow" />
         </LinearLayout>
     </LinearLayout>
 
@@ -162,35 +163,45 @@
         android:background="@android:color/darker_gray" />
 
     <LinearLayout
-        android:id="@+id/ll_template2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" >
 
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_weight="1.5"
             android:gravity="center"
             android:orientation="vertical" >
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="模板1" />
+                android:text="iPhone 5S"
+                android:textColor="@color/font_black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="商品规格：16G" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginRight="8dp"
-            android:layout_weight="1"
-            android:gravity="center"
+            android:layout_weight="3.5"
+            android:gravity="left|center"
             android:orientation="vertical" >
 
-            <TextView
+            <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="3" />
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="参考采购价：23.00" />
+            </LinearLayout>
         </LinearLayout>
 
         <LinearLayout
@@ -198,25 +209,12 @@
             android:layout_height="match_parent"
             android:layout_marginRight="8dp"
             android:layout_weight="1"
-            android:gravity="center" >
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="2014-6-19" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_marginRight="8dp"
-            android:layout_weight="1"
-            android:gravity="center" >
+            android:gravity="right|center" >
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@android:drawable/ic_menu_delete" />
+                android:background="@drawable/open_arrow" />
         </LinearLayout>
     </LinearLayout>
 
