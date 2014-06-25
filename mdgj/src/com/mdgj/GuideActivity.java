@@ -43,6 +43,12 @@ public class GuideActivity extends Activity implements OnClickListener,OnPageCha
 		initView();
 		
 		initData();	
+		findViewById(R.id.goin).setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View arg0) {
+				GuideActivity.this.finish();
+			}
+		});
 	}
 
 	/**

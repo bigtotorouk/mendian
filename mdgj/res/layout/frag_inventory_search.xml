@@ -31,10 +31,81 @@
 	
 	<include  layout="@layout/simple_search_layout"/>
 
-	<ListView
+	<LinearLayout android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:padding="4dp"
+	    android:orientation="vertical">
+	    <RelativeLayout android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical">
+	    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="电子秤 (PLG型)"
+            android:layout_centerVertical="true"
+            android:textColor="@color/font_default"
+            android:textSize="16sp" />
+	    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="P2014122304050004"
+            android:textColor="@color/font_default"
+            android:textSize="16sp" />
+	    
+	    
+		</RelativeLayout>
+		<LinearLayout android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_marginTop="2dp"
+		    android:orientation="horizontal">
+		    <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="库存：30"
+	            android:textColor="@color/red"
+	            android:textSize="14sp" />
+			    <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="10dp"
+	            android:text="单价：23.00"
+	            android:textColor="@color/font_default"
+	            android:textSize="14sp" />
+			     <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="10dp"
+	            android:text="金额：690.00"
+	            android:textColor="@color/font_default"
+	            android:textSize="14sp" />
+			    
+		</LinearLayout>
+		<LinearLayout android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_marginTop="2dp"
+		    android:orientation="horizontal">
+		    <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="类别：生活用品"
+	            android:textColor="@color/font_default"
+	            android:textSize="14sp" />
+			    <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="10dp"
+	            android:text="仓库：1号仓库"
+	            android:textColor="@color/font_default"
+	            android:textSize="14sp" />
+		</LinearLayout>
+	</LinearLayout>
+	<!-- <ListView
 	    android:layout_width="match_parent"
 	    android:layout_height="wrap_content"
 	    android:layout_weight="1" >
-	</ListView>
+	</ListView> -->
 
 </LinearLayout>

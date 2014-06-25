@@ -11,14 +11,15 @@ public final class R {
     public static final class attr {
     }
     public static final class color {
-        public static final int dashed_color=0x7f040007;
+        public static final int dashed_color=0x7f040008;
         public static final int font_black=0x7f040003;
         public static final int font_blue=0x7f040001;
         public static final int font_default=0x7f040000;
         public static final int font_green=0x7f040002;
         public static final int font_orange=0x7f040004;
-        public static final int pop_bg_color=0x7f040008;
-        public static final int transparent=0x7f040006;
+        public static final int pop_bg_color=0x7f040009;
+        public static final int red=0x7f040006;
+        public static final int transparent=0x7f040007;
         public static final int white=0x7f040005;
     }
     public static final class dimen {
@@ -88,7 +89,7 @@ public final class R {
         public static final int title_bg=0x7f020033;
     }
     public static final class id {
-        public static final int action_settings=0x7f090022;
+        public static final int action_settings=0x7f090023;
         public static final int add=0x7f090002;
         public static final int back=0x7f090001;
         public static final int btn_add=0x7f090018;
@@ -98,7 +99,8 @@ public final class R {
         public static final int btn_template_add=0x7f090019;
         public static final int content=0x7f090000;
         public static final int date=0x7f090014;
-        public static final int delete=0x7f090021;
+        public static final int delete=0x7f090022;
+        public static final int goin=0x7f09001f;
         public static final int inventory_check=0x7f090012;
         public static final int inventory_info=0x7f090010;
         public static final int inventory_move=0x7f090013;
@@ -107,7 +109,7 @@ public final class R {
         public static final int login=0x7f090004;
         public static final int month_purchase=0x7f090017;
         public static final int previous=0x7f09000b;
-        public static final int product_category=0x7f09001f;
+        public static final int product_category=0x7f090020;
         public static final int radio_button0=0x7f090005;
         public static final int radio_button1=0x7f090006;
         public static final int radio_button2=0x7f090007;
@@ -117,7 +119,7 @@ public final class R {
         public static final int remeber=0x7f090003;
         public static final int search=0x7f09000e;
         public static final int search_histroy=0x7f09000f;
-        public static final int simple_search=0x7f090020;
+        public static final int simple_search=0x7f090021;
         public static final int title=0x7f09000c;
         public static final int title_center=0x7f09000d;
         public static final int today_purchase=0x7f090015;
