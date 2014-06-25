@@ -19,6 +19,8 @@ public class LoginActivity extends Activity implements OnClickListener {
 		findViewById(R.id.login).setOnClickListener(this);
 		
 		System.out.println(java.util.UUID.randomUUID());
+		
+		startActivity(new Intent(LoginActivity.this, GuideActivity.class));
 	}
 
 	@Override
