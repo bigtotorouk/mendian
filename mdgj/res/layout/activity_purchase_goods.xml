@@ -121,7 +121,9 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="商品规格：RG01" />
+                android:text="商品规格：RG01"
+                android:textColor="@color/font_default"
+                android:textSize="16sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -139,7 +141,9 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="参考采购价：23.00" />
+                    android:text="参考采购价：23.00"
+                    android:textColor="@color/font_default"
+                    android:textSize="16sp" />
             </LinearLayout>
         </LinearLayout>
 
@@ -182,7 +186,9 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="商品规格：16G" />
+                android:text="商品规格：16G"
+                android:textColor="@color/font_default"
+                android:textSize="16sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -200,7 +206,9 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="参考采购价：23.00" />
+                    android:text="参考采购价：23.00"
+                    android:textColor="@color/font_default"
+                    android:textSize="16sp" />
             </LinearLayout>
         </LinearLayout>
 

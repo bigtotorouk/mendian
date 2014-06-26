@@ -77,7 +77,9 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="供应商名称" />
+                    android:text="供应商名称"
+                    android:textColor="@color/font_default"
+                    android:textSize="16sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -90,7 +92,9 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="选填" />
+                    android:text="选填"
+                    android:textColor="@color/font_blue"
+                    android:textSize="16sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -126,7 +130,9 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="日期" />
+                    android:text="日期"
+                    android:textColor="@color/font_default"
+                    android:textSize="16sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -139,7 +145,9 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="2014-06-15 09:32" />
+                    android:text="2014-06-15 09:32"
+                    android:textColor="@color/font_blue"
+                    android:textSize="16sp" />
             </LinearLayout>
 
             <!-- <LinearLayout -->
@@ -170,7 +178,9 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="仓库" />
+                    android:text="仓库"
+                    android:textColor="@color/font_default"
+                    android:textSize="16sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -183,7 +193,9 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="默认仓库" />
+                    android:text="默认仓库"
+                    android:textColor="@color/font_blue"
+                    android:textSize="16sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -275,7 +287,9 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="应退金额" />
+                    android:text="应退金额"
+                    android:textColor="@color/font_default"
+                    android:textSize="16sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -288,7 +302,9 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="20.00" />
+                    android:text="20.00"
+                    android:textColor="@color/font_blue"
+                    android:textSize="16sp" />
             </LinearLayout>
 
             <!-- <LinearLayout -->
@@ -324,7 +340,9 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="实退金额" />
+                    android:text="实退金额"
+                    android:textColor="@color/font_default"
+                    android:textSize="16sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -337,7 +355,9 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="20.00" />
+                    android:text="20.00"
+                    android:textColor="@color/font_blue"
+                    android:textSize="16sp" />
             </LinearLayout>
         </LinearLayout>
 
@@ -360,7 +380,9 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="结算方式" />
+                    android:text="结算方式"
+                    android:textColor="@color/font_default"
+                    android:textSize="16sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -373,7 +395,9 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="现金" />
+                    android:text="现金"
+                    android:textColor="@color/font_blue"
+                    android:textSize="16sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -409,7 +433,9 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="其它费用" />
+                    android:text="其它费用"
+                    android:textColor="@color/font_default"
+                    android:textSize="16sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -422,7 +448,9 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="0.00" />
+                    android:text="0.00"
+                    android:textColor="@color/font_blue"
+                    android:textSize="16sp" />
             </LinearLayout>
 
             <!-- <LinearLayout -->
@@ -461,7 +489,9 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="退单编号" />
+                    android:text="退单编号"
+                    android:textColor="@color/font_default"
+                    android:textSize="16sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -474,7 +504,9 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="C201412009320004" />
+                    android:text="C201412009320004"
+                    android:textColor="@color/font_blue"
+                    android:textSize="16sp" />
             </LinearLayout>
         </LinearLayout>
 
@@ -497,7 +529,9 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="备注" />
+                    android:text="备注"
+                    android:textColor="@color/font_default"
+                    android:textSize="16sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -510,7 +544,9 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="选填" />
+                    android:text="选填"
+                    android:textColor="@color/font_blue"
+                    android:textSize="16sp" />
             </LinearLayout>
 
             <!-- <LinearLayout -->
@@ -546,7 +582,9 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="制单人" />
+                    android:text="制单人"
+                    android:textColor="@color/font_default"
+                    android:textSize="16sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -559,7 +597,9 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="管理员" />
+                    android:text="管理员"
+                    android:textColor="@color/font_blue"
+                    android:textSize="16sp" />
             </LinearLayout>
 
             <!-- <LinearLayout -->
@@ -595,7 +635,9 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="制单时间" />
+                    android:text="制单时间"
+                    android:textColor="@color/font_default"
+                    android:textSize="16sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -608,7 +650,9 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="2014-12-23 10:32" />
+                    android:text="2014-12-23 10:32"
+                    android:textColor="@color/font_blue"
+                    android:textSize="16sp" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>

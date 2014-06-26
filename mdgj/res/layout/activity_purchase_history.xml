@@ -83,7 +83,9 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="2014-5-23" />
+                android:text="2014-5-23"
+                android:textColor="@color/font_default"
+                    android:textSize="16sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -118,12 +120,16 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="星期二" />
+                    android:text="星期二"
+                    android:textColor="@color/font_default"
+                    android:textSize="16sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="供应商A" />
+                    android:text="供应商A" 
+                    android:textColor="@color/font_default"
+                    android:textSize="16sp"/>
             </LinearLayout>
         </LinearLayout>
 
@@ -366,7 +372,9 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="2014-5-23" />
+                android:text="2014-5-23"
+                android:textColor="@color/font_default"
+                    android:textSize="16sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -401,12 +409,16 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="星期二" />
+                    android:text="星期二"
+                    android:textColor="@color/font_default"
+                    android:textSize="16sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="供应商A" />
+                    android:text="供应商A" 
+                    android:textColor="@color/font_default"
+                    android:textSize="16sp"/>
             </LinearLayout>
         </LinearLayout>
 

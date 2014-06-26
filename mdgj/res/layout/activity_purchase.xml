@@ -57,7 +57,9 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="采购金额" />
+                    android:text="采购金额"
+                    android:textColor="@color/font_default"
+                    android:textSize="16sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -148,7 +150,9 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="供应商A" />
+                android:text="供应商A"
+                android:textColor="@color/font_default"
+                android:textSize="16sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -416,7 +420,9 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="供应商A" />
+                android:text="供应商A"
+                android:textColor="@color/font_default"
+                android:textSize="16sp" />
         </LinearLayout>
 
         <LinearLayout
