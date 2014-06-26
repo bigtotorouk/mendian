@@ -58,14 +58,24 @@
 	            android:paddingBottom="2dp"
 	            android:gravity="center_vertical"
 	            android:orientation="horizontal">
-                <TextView android:layout_width="70dp"
+	            <TextView android:layout_width="5dp"
                     android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="@color/red"
+                    android:text="*"/>
+                <TextView android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
                     android:textSize="15sp"
                     android:textColor="@color/font_default"
                     android:text="仓库名称"/>
                 <EditText android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"/>
+                    android:layout_height="36dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="6dp"
+                    android:hint="必填"
+                    android:textColorHint="@color/font_blue"
+                    android:background="@null"/>
             </LinearLayout>
             <View android:layout_width="match_parent"
                 android:layout_height="1dp" android:background="@color/dashed_color"/>
@@ -77,12 +87,17 @@
 	            android:orientation="horizontal">
                 <TextView android:layout_width="70dp"
                     android:layout_height="wrap_content"
+                    android:gravity="right"
                     android:textSize="15sp"
                     android:textColor="@color/font_default"
                     android:text="仓库编号"/>
                 <EditText android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"/>
+                    android:layout_height="36dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="6dp"
+                    android:hint="选填"
+                    android:textColorHint="@color/font_blue"
+                    android:background="@null"/>
             </LinearLayout>
             <View android:layout_width="match_parent"
                 android:layout_height="1dp" android:background="@color/dashed_color"/>
@@ -94,12 +109,17 @@
 	            android:orientation="horizontal">
                 <TextView android:layout_width="70dp"
                     android:layout_height="wrap_content"
+                    android:gravity="right"
                     android:textSize="15sp"
                     android:textColor="@color/font_default"
                     android:text="仓库地址"/>
                 <EditText android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"/>
+                    android:layout_height="36dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="6dp"
+                    android:hint="选填"
+                    android:textColorHint="@color/font_blue"
+                    android:background="@null"/>
             </LinearLayout>
             <View android:layout_width="match_parent"
                 android:layout_height="1dp" android:background="@color/dashed_color"/>
@@ -111,12 +131,17 @@
 	            android:orientation="horizontal">
                 <TextView android:layout_width="70dp"
                     android:layout_height="wrap_content"
+                    android:gravity="right"
                     android:textSize="15sp"
                     android:textColor="@color/font_default"
                     android:text="办公电话"/>
                 <EditText android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"/>
+                    android:layout_height="36dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="6dp"
+                    android:hint="选填"
+                    android:textColorHint="@color/font_blue"
+                    android:background="@null"/>
             </LinearLayout>
             <View android:layout_width="match_parent"
                 android:layout_height="1dp" android:background="@color/dashed_color"/>
@@ -128,12 +153,17 @@
 	            android:orientation="horizontal">
                 <TextView android:layout_width="70dp"
                     android:layout_height="wrap_content"
+                    android:gravity="right"
                     android:textSize="15sp"
                     android:textColor="@color/font_default"
                     android:text="联系人"/>
                 <EditText android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"/>
+                    android:layout_height="36dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="6dp"
+                    android:hint="选填"
+                    android:textColorHint="@color/font_blue"
+                    android:background="@null"/>
             </LinearLayout>
             <View android:layout_width="match_parent"
                 android:layout_height="1dp" android:background="@color/dashed_color"/>
@@ -145,12 +175,17 @@
 	            android:orientation="horizontal">
                 <TextView android:layout_width="70dp"
                     android:layout_height="wrap_content"
+                    android:gravity="right"
                     android:textSize="15sp"
                     android:textColor="@color/font_default"
                     android:text="移动电话"/>
                 <EditText android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"/>
+                    android:layout_height="36dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="6dp"
+                    android:hint="选填"
+                    android:textColorHint="@color/font_blue"
+                    android:background="@null"/>
             </LinearLayout>
             <View android:layout_width="match_parent"
                 android:layout_height="1dp" android:background="@color/dashed_color"/>
@@ -162,12 +197,17 @@
 	            android:orientation="horizontal">
                 <TextView android:layout_width="70dp"
                     android:layout_height="wrap_content"
+                    android:gravity="right"
                     android:textSize="15sp"
                     android:textColor="@color/font_default"
                     android:text="备注"/>
                 <EditText android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"/>
+                    android:layout_height="36dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="6dp"
+                    android:hint="选填"
+                    android:textColorHint="@color/font_blue"
+                    android:background="@null"/>
             </LinearLayout>
             <View android:layout_width="match_parent"
                 android:layout_height="1dp" android:background="@color/dashed_color"/>
@@ -179,13 +219,16 @@
 	            android:orientation="horizontal">
                 <TextView android:layout_width="70dp"
                     android:layout_height="wrap_content"
+                    android:gravity="right"
                     android:textSize="15sp"
                     android:textColor="@color/font_default"
                     android:text="仓库状态"/>
                 <ToggleButton android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textOn=""
-                    android:textOff=""
+                    android:gravity="center_horizontal"
+                    android:layout_marginLeft="6dp"
+                    android:textOn="启用"
+                    android:textOff="禁用"
                     />
             </LinearLayout>
         </LinearLayout>

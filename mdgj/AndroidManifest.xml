@@ -46,7 +46,13 @@
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="com.mdgj.InventoryAddActivyt"
+            android:name="com.mdgj.InventoryAddActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mdgj.InventoryAddMoveActivity"
             android:configChanges="orientation|keyboardHidden"
             android:label="@string/app_name"
             android:screenOrientation="portrait" >

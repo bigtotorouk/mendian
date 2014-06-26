@@ -9,6 +9,7 @@
     <color name="font_green">#ff669900</color>
     <color name="font_black">#ff000000</color>
     <color name="font_orange">#ffff8800</color>
+    <color name="font_hint">#bfbfbf</color>
     
     <color name="white">#ffffff</color>
     <color name="red">#ff4539</color>
