@@ -53,613 +53,654 @@
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:text="历史记录"
-            android:textColor="@color/font_blue" />
+            android:textColor="@color/font_blue"
+            android:textSize="18sp" />
     </RelativeLayout>
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:background="@drawable/border_bg"
-        android:gravity="center"
+        android:id="@+id/content"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:orientation="vertical" >
 
-        <LinearLayout
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
+            android:layout_height="match_parent" >
 
             <LinearLayout
-                android:layout_width="0dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center"
                 android:orientation="vertical" >
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="供应商名称"
-                    android:textColor="@color/font_default"
-                    android:textSize="16sp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="@drawable/border_bg"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp" >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="供应商名称"
+                                android:textColor="@color/font_default"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="8dp"
+                            android:layout_weight="1"
+                            android:gravity="left" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="选填"
+                                android:textColor="@color/font_blue"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="8dp"
+                            android:layout_weight="1"
+                            android:gravity="right|center" >
+
+                            <!-- <Button -->
+                            <!-- android:layout_width="wrap_content" -->
+                            <!-- android:layout_height="wrap_content" -->
+                            <!-- android:background="@drawable/open_arrow"/> -->
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/darker_gray"
+                        android:visibility="invisible" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp" >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="日期"
+                                android:textColor="@color/font_default"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="8dp"
+                            android:layout_weight="2"
+                            android:gravity="left" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="2014-06-15 09:32"
+                                android:textColor="@color/font_blue"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <!-- <LinearLayout -->
+                        <!-- android:layout_width="0dp" -->
+                        <!-- android:layout_height="match_parent" -->
+                        <!-- android:layout_marginRight="8dp" -->
+                        <!-- android:layout_weight="1" -->
+                        <!-- android:gravity="right|center" > -->
+                        <!-- </LinearLayout> -->
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/darker_gray"
+                        android:visibility="invisible" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp" >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="仓库"
+                                android:textColor="@color/font_default"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="8dp"
+                            android:layout_weight="1"
+                            android:gravity="left" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="默认仓库"
+                                android:textColor="@color/font_blue"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="8dp"
+                            android:layout_weight="1"
+                            android:gravity="right|center" >
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/open_arrow" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_bg"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/header_add" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="选择商品"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="1"
+                        android:gravity="right|center_vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="从常选商品选择"
+                            android:textColor="@color/font_blue" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="@drawable/border_bg"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="您还没有选择任何商品！\n点击上面选择商品" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="@drawable/border_bg"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp" >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="应退金额"
+                                android:textColor="@color/font_default"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="8dp"
+                            android:layout_weight="2"
+                            android:gravity="left" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="20.00"
+                                android:textColor="@color/font_blue"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <!-- <LinearLayout -->
+                        <!-- android:layout_width="0dp" -->
+                        <!-- android:layout_height="match_parent" -->
+                        <!-- android:layout_marginRight="8dp" -->
+                        <!-- android:layout_weight="1" -->
+                        <!-- android:gravity="right|center" > -->
+
+
+                        <!-- <Button -->
+                        <!-- android:layout_width="wrap_content" -->
+                        <!-- android:layout_height="wrap_content" /> -->
+                        <!-- </LinearLayout> -->
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/darker_gray"
+                        android:visibility="invisible" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp" >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="实退金额"
+                                android:textColor="@color/font_default"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="8dp"
+                            android:layout_weight="2"
+                            android:gravity="left" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="20.00"
+                                android:textColor="@color/font_blue"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/darker_gray"
+                        android:visibility="invisible" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp" >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="结算方式"
+                                android:textColor="@color/font_default"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="8dp"
+                            android:layout_weight="1"
+                            android:gravity="left" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="现金"
+                                android:textColor="@color/font_blue"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="8dp"
+                            android:layout_weight="1"
+                            android:gravity="right|center" >
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/open_arrow" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/darker_gray"
+                        android:visibility="invisible" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp" >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="其它费用"
+                                android:textColor="@color/font_default"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="8dp"
+                            android:layout_weight="2"
+                            android:gravity="left" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0.00"
+                                android:textColor="@color/font_blue"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <!-- <LinearLayout -->
+                        <!-- android:layout_width="0dp" -->
+                        <!-- android:layout_height="match_parent" -->
+                        <!-- android:layout_marginRight="8dp" -->
+                        <!-- android:layout_weight="1" -->
+                        <!-- android:gravity="right|center" > -->
+
+
+                        <!-- <Button -->
+                        <!-- android:layout_width="wrap_content" -->
+                        <!-- android:layout_height="wrap_content" /> -->
+                        <!-- </LinearLayout> -->
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="@drawable/border_bg"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp" >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="退单编号"
+                                android:textColor="@color/font_default"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="8dp"
+                            android:layout_weight="2"
+                            android:gravity="left" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="C201412009320004"
+                                android:textColor="@color/font_blue"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/darker_gray"
+                        android:visibility="invisible" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp" >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="备注"
+                                android:textColor="@color/font_default"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="8dp"
+                            android:layout_weight="2"
+                            android:gravity="left" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="选填"
+                                android:textColor="@color/font_blue"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <!-- <LinearLayout -->
+                        <!-- android:layout_width="0dp" -->
+                        <!-- android:layout_height="match_parent" -->
+                        <!-- android:layout_marginRight="8dp" -->
+                        <!-- android:layout_weight="1" -->
+                        <!-- android:gravity="right|center" > -->
+
+
+                        <!-- <Button -->
+                        <!-- android:layout_width="wrap_content" -->
+                        <!-- android:layout_height="wrap_content" /> -->
+                        <!-- </LinearLayout> -->
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/darker_gray"
+                        android:visibility="invisible" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp" >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="制单人"
+                                android:textColor="@color/font_default"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="8dp"
+                            android:layout_weight="2"
+                            android:gravity="left" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="管理员"
+                                android:textColor="@color/font_blue"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <!-- <LinearLayout -->
+                        <!-- android:layout_width="0dp" -->
+                        <!-- android:layout_height="match_parent" -->
+                        <!-- android:layout_marginRight="8dp" -->
+                        <!-- android:layout_weight="1" -->
+                        <!-- android:gravity="right|center" > -->
+
+
+                        <!-- <Button -->
+                        <!-- android:layout_width="wrap_content" -->
+                        <!-- android:layout_height="wrap_content" /> -->
+                        <!-- </LinearLayout> -->
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/darker_gray"
+                        android:visibility="invisible" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="制单时间"
+                                android:textColor="@color/font_default"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="8dp"
+                            android:layout_weight="2"
+                            android:gravity="left" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="2014-12-23 10:32"
+                                android:textColor="@color/font_blue"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
             </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_marginRight="8dp"
-                android:layout_weight="1"
-                android:gravity="center" >
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="选填"
-                    android:textColor="@color/font_blue"
-                    android:textSize="16sp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_marginRight="8dp"
-                android:layout_weight="1"
-                android:gravity="right|center" >
-
-                <!-- <Button -->
-                <!-- android:layout_width="wrap_content" -->
-                <!-- android:layout_height="wrap_content" -->
-                <!-- android:background="@drawable/open_arrow"/> -->
-            </LinearLayout>
-        </LinearLayout>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@android:color/darker_gray" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:orientation="vertical" >
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="日期"
-                    android:textColor="@color/font_default"
-                    android:textSize="16sp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_marginRight="8dp"
-                android:layout_weight="2"
-                android:gravity="center" >
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="2014-06-15 09:32"
-                    android:textColor="@color/font_blue"
-                    android:textSize="16sp" />
-            </LinearLayout>
-
-            <!-- <LinearLayout -->
-            <!-- android:layout_width="0dp" -->
-            <!-- android:layout_height="match_parent" -->
-            <!-- android:layout_marginRight="8dp" -->
-            <!-- android:layout_weight="1" -->
-            <!-- android:gravity="right|center" > -->
-            <!-- </LinearLayout> -->
-        </LinearLayout>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@android:color/darker_gray" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:orientation="vertical" >
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="仓库"
-                    android:textColor="@color/font_default"
-                    android:textSize="16sp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_marginRight="8dp"
-                android:layout_weight="1"
-                android:gravity="center" >
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="默认仓库"
-                    android:textColor="@color/font_blue"
-                    android:textSize="16sp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_marginRight="8dp"
-                android:layout_weight="1"
-                android:gravity="right|center" >
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/open_arrow" />
-            </LinearLayout>
-        </LinearLayout>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="8dp"
-            android:layout_weight="1"
-            android:background="@drawable/btn_bg"
-            android:gravity="center"
-            android:orientation="horizontal" >
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/header_add" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="选择商品"
-                android:textColor="@color/white"
-                android:textSize="18sp" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_marginRight="8dp"
-            android:layout_weight="1"
-            android:gravity="right|center_vertical" >
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="从常选商品选择"
-                android:textColor="@color/font_blue" />
-        </LinearLayout>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:background="@drawable/border_bg"
-        android:gravity="center" >
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="您还没有选择任何商品！\n点击上面选择商品" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:background="@drawable/border_bg"
-        android:gravity="center"
-        android:orientation="vertical" >
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:orientation="vertical" >
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="应退金额"
-                    android:textColor="@color/font_default"
-                    android:textSize="16sp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_marginRight="8dp"
-                android:layout_weight="2"
-                android:gravity="left" >
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="20.00"
-                    android:textColor="@color/font_blue"
-                    android:textSize="16sp" />
-            </LinearLayout>
-
-            <!-- <LinearLayout -->
-            <!-- android:layout_width="0dp" -->
-            <!-- android:layout_height="match_parent" -->
-            <!-- android:layout_marginRight="8dp" -->
-            <!-- android:layout_weight="1" -->
-            <!-- android:gravity="right|center" > -->
-
-
-            <!-- <Button -->
-            <!-- android:layout_width="wrap_content" -->
-            <!-- android:layout_height="wrap_content" /> -->
-            <!-- </LinearLayout> -->
-        </LinearLayout>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@android:color/darker_gray" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:orientation="vertical" >
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="实退金额"
-                    android:textColor="@color/font_default"
-                    android:textSize="16sp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_marginRight="8dp"
-                android:layout_weight="2"
-                android:gravity="left" >
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="20.00"
-                    android:textColor="@color/font_blue"
-                    android:textSize="16sp" />
-            </LinearLayout>
-        </LinearLayout>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@android:color/darker_gray" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:orientation="vertical" >
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="结算方式"
-                    android:textColor="@color/font_default"
-                    android:textSize="16sp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_marginRight="8dp"
-                android:layout_weight="1"
-                android:gravity="center" >
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="现金"
-                    android:textColor="@color/font_blue"
-                    android:textSize="16sp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_marginRight="8dp"
-                android:layout_weight="1"
-                android:gravity="right|center" >
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/open_arrow" />
-            </LinearLayout>
-        </LinearLayout>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@android:color/darker_gray" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:orientation="vertical" >
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="其它费用"
-                    android:textColor="@color/font_default"
-                    android:textSize="16sp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_marginRight="8dp"
-                android:layout_weight="2"
-                android:gravity="left" >
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="0.00"
-                    android:textColor="@color/font_blue"
-                    android:textSize="16sp" />
-            </LinearLayout>
-
-            <!-- <LinearLayout -->
-            <!-- android:layout_width="0dp" -->
-            <!-- android:layout_height="match_parent" -->
-            <!-- android:layout_marginRight="8dp" -->
-            <!-- android:layout_weight="1" -->
-            <!-- android:gravity="right|center" > -->
-
-
-            <!-- <Button -->
-            <!-- android:layout_width="wrap_content" -->
-            <!-- android:layout_height="wrap_content" /> -->
-            <!-- </LinearLayout> -->
-        </LinearLayout>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:background="@drawable/border_bg"
-        android:gravity="center"
-        android:orientation="vertical" >
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:orientation="vertical" >
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="退单编号"
-                    android:textColor="@color/font_default"
-                    android:textSize="16sp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_marginRight="8dp"
-                android:layout_weight="2"
-                android:gravity="left" >
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="C201412009320004"
-                    android:textColor="@color/font_blue"
-                    android:textSize="16sp" />
-            </LinearLayout>
-        </LinearLayout>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@android:color/darker_gray" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:orientation="vertical" >
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="备注"
-                    android:textColor="@color/font_default"
-                    android:textSize="16sp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_marginRight="8dp"
-                android:layout_weight="2"
-                android:gravity="left" >
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="选填"
-                    android:textColor="@color/font_blue"
-                    android:textSize="16sp" />
-            </LinearLayout>
-
-            <!-- <LinearLayout -->
-            <!-- android:layout_width="0dp" -->
-            <!-- android:layout_height="match_parent" -->
-            <!-- android:layout_marginRight="8dp" -->
-            <!-- android:layout_weight="1" -->
-            <!-- android:gravity="right|center" > -->
-
-
-            <!-- <Button -->
-            <!-- android:layout_width="wrap_content" -->
-            <!-- android:layout_height="wrap_content" /> -->
-            <!-- </LinearLayout> -->
-        </LinearLayout>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@android:color/darker_gray" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:orientation="vertical" >
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="制单人"
-                    android:textColor="@color/font_default"
-                    android:textSize="16sp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_marginRight="8dp"
-                android:layout_weight="2"
-                android:gravity="left" >
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="管理员"
-                    android:textColor="@color/font_blue"
-                    android:textSize="16sp" />
-            </LinearLayout>
-
-            <!-- <LinearLayout -->
-            <!-- android:layout_width="0dp" -->
-            <!-- android:layout_height="match_parent" -->
-            <!-- android:layout_marginRight="8dp" -->
-            <!-- android:layout_weight="1" -->
-            <!-- android:gravity="right|center" > -->
-
-
-            <!-- <Button -->
-            <!-- android:layout_width="wrap_content" -->
-            <!-- android:layout_height="wrap_content" /> -->
-            <!-- </LinearLayout> -->
-        </LinearLayout>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@android:color/darker_gray" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:orientation="vertical" >
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="制单时间"
-                    android:textColor="@color/font_default"
-                    android:textSize="16sp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_marginRight="8dp"
-                android:layout_weight="2"
-                android:gravity="left" >
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="2014-12-23 10:32"
-                    android:textColor="@color/font_blue"
-                    android:textSize="16sp" />
-            </LinearLayout>
-        </LinearLayout>
+        </ScrollView>
     </LinearLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
+        android:layout_height="wrap_content"
+        android:background="@drawable/main_bg2"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
 
         <TextView
             android:layout_width="wrap_content"
